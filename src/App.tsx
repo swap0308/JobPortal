@@ -8,6 +8,7 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import FindTalent from './Pages/FindTalent';
+import TalentProfilePage from './Pages/TalentProfilePage';
 
 function App() {
   const theme = createTheme({
@@ -23,6 +24,7 @@ function App() {
     <Routes>
         <Route path='/find-jobs' element={<FindJobs/>}></Route>
         <Route path='/find-talent' element={<FindTalent/>}></Route>
+        <Route path='/talent-profile' element={<TalentProfilePage/>}></Route>
         <Route path='*' element={<HomePage/>}></Route>
     </Routes> 
     <Footer/>
